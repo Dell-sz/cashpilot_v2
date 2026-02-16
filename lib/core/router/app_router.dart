@@ -3,6 +3,7 @@ import 'package:go_router/go_router.dart';
 import 'package:cashpilot_v2/presentation/screens/login_screen.dart';
 import 'package:cashpilot_v2/presentation/screens/register_screen.dart';
 import 'package:cashpilot_v2/presentation/screens/dashboard_screen.dart';
+import 'package:cashpilot_v2/presentation/screens/test_data_screen.dart';
 import 'package:cashpilot_v2/data/providers/auth_provider.dart';
 
 final routerProvider = Provider<GoRouter>((ref) {
@@ -33,6 +34,10 @@ final routerProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/dashboard',
         builder: (context, state) => const DashboardScreen(),
+      ),
+      GoRoute(
+        path: '/test-data',
+        builder: (context, state) => const TestDataScreen(),
       ),
     ],
   );

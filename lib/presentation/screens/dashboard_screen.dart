@@ -65,6 +65,14 @@ class DashboardScreen extends ConsumerWidget {
               ),
             ),
             const SizedBox(height: 32),
+            ElevatedButton(
+              onPressed: () => context.push('/test-data'),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: AppColors.secondary,
+              ),
+              child: const Text('🧪 Testar Dados'),
+            ),
+            const SizedBox(height: 16),
             Container(
               margin: const EdgeInsets.symmetric(horizontal: 24),
               padding: const EdgeInsets.all(20),
