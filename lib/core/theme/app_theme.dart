@@ -1,6 +1,10 @@
 // Placeholder for theme
 import 'package:flutter/material.dart';
 
+class Imons {
+  static const total_balance = Icons.account_balance_wallet;
+}
+
 class AppColors {
   static const primary = Color(0xFF667EEA);
   static const primaryLight = Color(0xFF8198F0);
